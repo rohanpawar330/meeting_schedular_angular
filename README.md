@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
+## How to run :
+
+To run the project:
+1.unzip it.
+2.go to that folder and open in VSCode or you can navigate to cmd inside that folder.
+3.make sure you have "`node.js`" & "`angular cli`" is installed.
+4.now run `npm i`;
+5.then `ng serve -o`
+6.the server will run at `localhost:4200`.
+7.open the run in window and terminal in mac type : `chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security`
+8.this will open the chrome to default security mode to run the app.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
