@@ -17,9 +17,6 @@ export class ServicesService {
 
     let headers = {
       "Access-Control-Allow-Origin": "*",
-      // "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-      // "Access-Control-Allow-Headers": "X-Requested-With"
-      // "Access-Control-Allow-Origin": "http://localhost:4200",
       "Access-Control-Allow-Credentials": "true",
       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
       "Access-Control-Allow-Headers": "Origin, Content-Type, Accept",
