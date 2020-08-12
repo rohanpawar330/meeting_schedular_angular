@@ -1,0 +1,18 @@
+<div class="center">
+    <mat-card class="container">
+        <div class="center pad-b-2rem color-blue">
+            <mat-icon mat-button (click)="backDate()">arrow_back_ios</mat-icon>
+            <mat-card-title mat-button class="title">{{date | date:'d MMM yyyy'}}</mat-card-title>
+            <mat-icon (click)="forwardDate()">arrow_forward_ios</mat-icon>
+        </div>
+        <mat-card class="space-btw" *ngFor="let item of responseData">
+            <div class="w20 center">{{item?.start_time}} - {{item?.end_time}}</div>
+            <div class="w80">Meeting with {{item?.participants}} for {{item?.description}}</div>
+        </mat-card>
+
+        <div *ngIf="!responseData?.length > 0">No Meetings Today</div>
+
+        <button mat-raised-button class="add-meet" [disabled]="currentDate > date "
+            (click)="goToAddMeeting(date,responseData)">Add Meeting</button>
+    </mat-card>
+</div>

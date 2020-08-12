@@ -1,0 +1,46 @@
+<div class="center">
+    <mat-card class="container">
+        <form class="w60">
+            <div class="date">{{parameter?.date | date:'d MMM yyyy'}}</div>
+            <div class="time-cont">
+                <mat-form-field>
+                    <input matInput aria-label="default time" placeholder="Start Time" [ngxTimepicker]="startTime"
+                        [format]="24" readonly>
+                    <ngx-material-timepicker #startTime></ngx-material-timepicker>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput aria-label="default time" placeholder="End Time" [ngxTimepicker]="endTime"
+                        [format]="24" readonly>
+                    <ngx-material-timepicker #endTime></ngx-material-timepicker>
+                </mat-form-field>
+            </div>
+
+            <mat-form-field class="w100">
+                <mat-label>Meeting Description</mat-label>
+                <textarea matInput rows="4" cols="50" placeholder="Meeting Description..."
+                    [formControl]="commentFC"></textarea>
+            </mat-form-field>
+        </form>
+
+        <button mat-raised-button class="add-meet" (click)="addMeeting(startTime,endTime)">Save</button>
+
+    </mat-card>
+</div>
+<div class="schedule">
+    <!-- <mat-label class="title" *ngIf="meetingArray.length > 0">Meeting can't be scheduled :</mat-label> -->
+    <div *ngFor="let item of meetingArray">
+        <mat-card class="not-sch" *ngIf="item?.createMeeting =='Slot not available'">
+            <div>{{item?.scheduledMeeting}}</div>
+            <div>{{item?.createMeeting}}</div>
+        </mat-card>
+    </div>
+    <div *ngIf="meetingArray.length > 0">
+        <mat-label class="title">List of Meeting Scheduled Today :</mat-label>
+        <div class="grid">
+            <mat-card class="all-meet" *ngFor="let item of parameter.items">
+                <div>{{item?.start_time}} - {{item?.end_time}}</div>
+            </mat-card>
+        </div>
+    </div>
+</div>

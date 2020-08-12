@@ -1,0 +1,54 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.title {
+    margin: 0;
+    padding: 0 1em;
+}
+.arrow-btn {
+    background-color: #f8f8f8;
+    color: black;
+    display: flex;
+    place-content: center;
+}
+.container {
+    width: 80%;
+    margin: 2em;
+    padding-bottom: 4em;
+    text-align: center;
+    min-height: 40vh;
+}
+.pad-b-2rem {
+    padding-bottom: 2rem;
+}
+
+.space-btw {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.w20 {
+    font-weight: bold;
+    width: 20%;
+}
+.w80 {
+    text-align: left;
+    width: 50%;
+}
+.color-blue {
+    color: #8282e2;
+}
+.add-meet {
+    background-color: #8282e2;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+}

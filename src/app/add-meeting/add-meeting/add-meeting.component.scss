@@ -1,0 +1,75 @@
+.add-meet {
+  background-color: #8282e2;
+  color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 1em;
+}
+.container {
+  width: 80%;
+  margin: 2em;
+  padding-bottom: 4em;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w60 {
+  width: 60%;
+}
+.time-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w100 {
+  width: 100%;
+  margin-top: 1em;
+}
+textarea {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.date {
+  background-color: #8282e2;
+  color: white;
+  padding: 1em;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 20%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.title {
+  font-size: 16px;
+  padding: 10px;
+}
+.schedule {
+  width: 80%;
+  margin: auto;
+}
+.not-sch {
+  margin: 5px;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.all-meet {
+  width: 90%;
+  margin: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
